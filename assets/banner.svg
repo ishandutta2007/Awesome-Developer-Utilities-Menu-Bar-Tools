@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="420">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3" />
+    </pattern>
+
+    <!-- Animations -->
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.6; transform: scale(1.08); }
+      }
+      @keyframes floatParticle {
+        0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+        50% { transform: translateY(-15px) translateX(10px); opacity: 0.7; }
+        100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+      }
+      @keyframes floatCard1 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes floatCard2 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .glow-blob-1 {
+        animation: pulseGlow 6s ease-in-out infinite;
+        transform-origin: 200px 100px;
+      }
+      .glow-blob-2 {
+        animation: pulseGlow 8s ease-in-out infinite 1s;
+        transform-origin: 1000px 320px;
+      }
+      .p1 { animation: floatParticle 5s ease-in-out infinite; }
+      .p2 { animation: floatParticle 7s ease-in-out infinite 2s; }
+      .p3 { animation: floatParticle 6s ease-in-out infinite 1s; }
+      .card-1 { animation: floatCard1 4s ease-in-out infinite; }
+      .card-2 { animation: floatCard2 5s ease-in-out infinite 0.5s; }
+      .card-3 { animation: floatCard1 4.5s ease-in-out infinite 1.5s; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" />
+  <rect width="1200" height="420" fill="url(#gridPattern)" />
+
+  <!-- Dynamic Glowing Orbs in the Background (Behind Text) -->
+  <circle cx="220" cy="100" r="180" fill="url(#glowGrad1)" class="glow-blob-1" />
+  <circle cx="980" cy="300" r="220" fill="url(#glowGrad2)" class="glow-blob-2" />
+
+  <!-- Animated Particles in Background -->
+  <circle cx="150" cy="280" r="3" fill="#38bdf8" class="p1" />
+  <circle cx="320" cy="60" r="2.5" fill="#818cf8" class="p2" />
+  <circle cx="880" cy="120" r="3" fill="#c084fc" class="p3" />
+  <circle cx="1060" cy="180" r="2.5" fill="#38bdf8" class="p1" />
+  <circle cx="720" cy="50" r="2" fill="#f43f5e" class="p2" />
+
+  <!-- Simulated Menu Bar at Top Mockup -->
+  <g opacity="0.65">
+    <rect x="50" y="24" width="1100" height="32" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <!-- Apple / OS Logo area -->
+    <circle cx="75" cy="40" r="4" fill="#64748b" />
+    <text x="95" y="44" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Workspace</text>
+    <text x="175" y="44" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Tools</text>
+    <text x="220" y="44" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Utilities</text>
+    <text x="280" y="44" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Window</text>
+
+    <!-- Menu Bar Icons (Right side) -->
+    <rect x="910" y="34" width="18" height="12" rx="2" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+    <path d="M 945 44 L 945 36 M 949 44 L 949 33 M 953 44 L 953 38 M 957 44 L 957 31" stroke="#34d399" stroke-width="1.5" stroke-linecap="round" />
+    <path d="M 980 43 A 6 6 0 0 1 992 43 M 977 40 A 10 10 0 0 1 995 40 M 974 37 A 14 14 0 0 1 998 37" fill="none" stroke="#818cf8" stroke-width="1.5" stroke-linecap="round" />
+    <circle cx="1020" cy="40" r="5" fill="#f59e0b" />
+    <text x="1042" y="44" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">Tue 09:41</text>
+  </g>
+
+  <!-- FOREGROUND: Main Title & Subtitle (Always in foreground, crystal clear) -->
+  <g>
+    <!-- Badge Pill Above Title -->
+    <rect x="420" y="80" width="360" height="28" rx="14" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+    <circle cx="436" cy="94" r="5" fill="#10b981" />
+    <text x="452" y="99" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1">CURATED DEVELOPER ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="600" y="160" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="46" font-weight="900" fill="url(#primaryGrad)" letter-spacing="-0.5">
+      Developer Utilities &amp; Menu Bar Tools
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="205" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="400" fill="#94a3b8" letter-spacing="0.2">
+      High-Performance Application Launchers • Window Tiling • System Monitors • Clipboard &amp; Text Expanders
+    </text>
+
+    <!-- Tagline -->
+    <text x="600" y="235" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#64748b">
+      Engineered for macOS, Linux &amp; Windows Power Users and Software Engineers
+    </text>
+  </g>
+
+  <!-- Dynamic Feature Cards (Bottom Area, Complementary to Text) -->
+  <g transform="translate(100, 268)">
+    <!-- Card 1: Menu Bar & Status -->
+    <g class="card-1" transform="translate(0, 0)">
+      <rect width="220" height="95" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <rect x="16" y="18" width="28" height="28" rx="6" fill="#0369a1" />
+      <text x="24" y="37" font-size="16">⚡</text>
+      <text x="54" y="32" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Menu Bar Tools</text>
+      <text x="54" y="47" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Ice • Stats • xbar</text>
+      <text x="16" y="78" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Real-time status &amp; icon manager</text>
+    </g>
+
+    <!-- Card 2: Application Launchers -->
+    <g class="card-2" transform="translate(260, 0)">
+      <rect width="220" height="95" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <rect x="16" y="18" width="28" height="28" rx="6" fill="#4338ca" />
+      <text x="24" y="37" font-size="16">🚀</text>
+      <text x="54" y="32" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Smart Launchers</text>
+      <text x="54" y="47" fill="#818cf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Raycast • Alfred • Flow</text>
+      <text x="16" y="78" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Fuzzy search &amp; script automation</text>
+    </g>
+
+    <!-- Card 3: Window Managers -->
+    <g class="card-3" transform="translate(520, 0)">
+      <rect width="220" height="95" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <rect x="16" y="18" width="28" height="28" rx="6" fill="#6d28d9" />
+      <text x="24" y="37" font-size="16">🪟</text>
+      <text x="54" y="32" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Tiling &amp; Layouts</text>
+      <text x="54" y="47" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Rectangle • AeroSpace • Yabai</text>
+      <text x="16" y="78" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Keyboard-driven window snapping</text>
+    </g>
+
+    <!-- Card 4: Snippets & Productivity -->
+    <g class="card-1" transform="translate(780, 0)">
+      <rect width="220" height="95" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+      <rect x="16" y="18" width="28" height="28" rx="6" fill="#be185d" />
+      <text x="24" y="37" font-size="16">📋</text>
+      <text x="54" y="32" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Clipboard &amp; Text</text>
+      <text x="54" y="47" fill="#f43f5e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Maccy • Espanso • CopyQ</text>
+      <text x="16" y="78" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Instant macro &amp; snippet expanders</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <rect x="0" y="416" width="1200" height="4" fill="url(#primaryGrad)" />
+</svg>
