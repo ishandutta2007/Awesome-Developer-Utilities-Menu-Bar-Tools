@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Developer-Utilities-Menu-Bar-Tools/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Developer-Utilities-Menu-Bar-Tools?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Developer-Utilities-Menu-Bar-Tools/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Developer-Utilities-Menu-Bar-Tools?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Developer-Utilities-Menu-Bar-Tools/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Developer-Utilities-Menu-Bar-Tools?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -63,7 +63,7 @@ The table below catalogs premier commercial desktop utilities and SaaS platforms
 
 ## ⭐ Open-Source GitHub Projects
 
-Explore the finest open-source developer utilities and menu bar applications. Every project features a live GitHub star badge linking directly to its stargazer community, sorted descending by GitHub star count.
+Explore the finest open-source developer utilities and menu bar applications. Every project features a live GitHub Stars_Badge linking directly to its stargazer community, sorted descending by GitHub Stars_Count.
 
 | Repository & Stargazers 🌟 | Platform / Stack 💻 | Description & Key Features 🚀 |
 | :--- | :--- | :--- |
@@ -103,7 +103,7 @@ Contributions to expand and polish this ecosystem are warmly welcomed! 🌟
 2. 🌿 **Create a New Branch** (`git checkout -b feature/add-new-tool`).
 3. 📝 **Add or Update Entries** in `README.md`:
    - For SaaS products: Include pricing starting tier, specific free tier/trial limits, and estimated company valuation/revenue in the tabular matrix.
-   - For Open-Source tools: Include platform/stack, a description, and the social star badge linked to the repo's `/stargazers` endpoint.
+   - For Open-Source tools: Include platform/stack, a description, and the social Stars_Badge linked to the repo's `/stargazers` endpoint.
 4. 📬 **Submit a Pull Request** with a concise summary of the addition or edit.
 
 ---
